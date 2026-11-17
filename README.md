@@ -79,3 +79,12 @@ quiz-game/
 | `best_score` | 최고 점수. 아직 풀지 않았으면 `null` |
 | `score` / `correct` / `total` | 점수 / 맞힌 개수 / 전체 문제 수 |
 > clone 실습: 복제본에서 추가한 문장입니다.
+<img width="462" height="582" alt="699215767-c36330d9-46fd-4e02-bee7-c29f9fc0c688" src="https://github.com/user-attachments/assets/8f9900db-4b48-4409-971f-2c78d9db690f" />
+<img width="953" height="1010" alt="699215763-1fed3ea7-fb09-493b-aff1-4f2898c48919" src="https://github.com/user-attachments/assets/f65de10c-548e-4ab8-a1eb-65e133e7e653" />
+<img width="461" height="638" alt="699215758-1b8982c0-e65f-4bb8-b921-a588e913f6cb" src="https://github.com/user-attachments/assets/c4dc2710-485b-41c6-bc29-22221197b617" />
+<img width="968" height="1013" alt="699215744-23e13b6d-d8d9-489c-89ae-cdc8547ed0c0" src="https://github.com/user-attachments/assets/d63034e3-1069-40e0-a821-acbd00b248e4" />
+<img width="1917" height="1078" alt="699215771-dd9b597f-c092-4434-9c72-5a715788960b" src="https://github.com/user-attachments/assets/ca45d83e-37b3-469b-9737-a360728d2071" />
+
+
+
+
