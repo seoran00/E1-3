@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Mini NPU Simulator
 
 AI 칩(NPU)이 사용하는 MAC(Multiply-Accumulate) 연산을 Python으로 직접 구현해 보는 콘솔 프로그램입니다.
@@ -160,3 +161,7 @@ quiz-game/
 
 
 >>>>>>> c95b8f257410c72fd47e86bc05ef9993d4f6e725
+=======
+# E1-3
+계산기만들기
+>>>>>>> 283ea2388648a0b1bc13cb08cda7dad028b562fe
