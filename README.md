@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Mini NPU Simulator
 
 AI 칩(NPU)이 사용하는 MAC(Multiply-Accumulate) 연산을 Python으로 직접 구현해 보는 콘솔 프로그램입니다.
@@ -67,3 +68,95 @@ AI 칩(NPU)이 사용하는 MAC(Multiply-Accumulate) 연산을 Python으로 직�
 - 3×3은 연산 횟수가 9번뿐이라 함수 호출 같은 고정 비용의 비중이 커서, 25×25와의 시간 비율(약 28배)이 연산 횟수 비율(약 69배)보다 작게 나왔습니다.
 - 측정값은 실행할 때마다 조금씩 달라지지만, 크기가 커질수록 시간이 늘어나는 경향은 같습니다.
 - CPU는 이 연산을 하나씩 순서대로 처리하지만, NPU는 많은 MAC 연산을 동시에(병렬로) 처리할 수 있어 큰 필터에서 유리합니다.
+=======
+# 🎯 나만의 퀴즈 게임
+
+## 프로젝트 개요
+
+Python으로 만든 **터미널(콘솔) 퀴즈 게임**입니다.
+메뉴에서 번호를 선택해 퀴즈를 풀고, 새 퀴즈를 추가하고, 목록과 최고 점수를 확인할 수 있습니다.
+퀴즈와 최고 점수는 `state.json` 파일에 저장되어 프로그램을 껐다 켜도 유지됩니다.
+
+## 퀴즈 주제와 선정 이유
+
+- **주제:** Python 기초 문법
+- **선정 이유:** Python을 처음 배우는 과정에서 만든 프로젝트라서, 배운 내용(출력 함수, 자료형, 함수 정의 등)을 퀴즈로 복습하면 학습에 도움이 된다고 생각했습니다.
+
+## 실행 방법
+
+1. Python 3.10 이상이 설치되어 있어야 합니다.
+2. 저장소를 내려받습니다.
+
+```
+git clone https://github.com/seoran00/quiz-game.git
+cd quiz-game
+```
+
+3. 프로그램을 실행합니다.
+
+```
+python main.py
+```
+
+## 기능 목록
+
+| 번호 | 기능 | 설명 |
+|---|---|---|
+| 1 | 퀴즈 풀기 | 등록된 퀴즈를 출제하고 정답/오답과 결과 점수를 보여 줍니다. |
+| 2 | 퀴즈 추가 | 문제, 선택지 4개, 정답 번호를 입력해 새 퀴즈를 등록합니다. |
+| 3 | 퀴즈 목록 | 등록된 퀴즈의 문제 목록을 보여 줍니다. |
+| 4 | 점수 확인 | 지금까지의 최고 점수를 보여 줍니다. |
+| 5 | 종료 | 데이터를 저장하고 프로그램을 종료합니다. |
+
+- 잘못된 입력(빈 입력, 문자, 범위 밖 숫자)은 안내 후 다시 입력받습니다.
+- `Ctrl+C` 또는 입력 종료 시에도 저장 후 안전하게 종료합니다.
+- 저장 파일이 없거나 손상되어도 기본 퀴즈로 실행됩니다.
+
+## 파일 구조
+
+```
+quiz-game/
+├── main.py        # 프로그램 전체 코드 (Quiz, QuizGame 클래스)
+├── state.json     # 퀴즈와 최고 점수 저장 파일
+├── README.md      # 프로젝트 설명서
+└── .gitignore     # Git이 추적하지 않을 파일 목록
+```
+
+## 데이터 파일 설명 (state.json)
+
+- **경로:** 프로젝트 루트의 `state.json` (`main.py`와 같은 폴더)
+- **역할:** 퀴즈 목록과 최고 점수를 저장합니다. (UTF-8 인코딩)
+- **구조:**
+
+```json
+{
+    "quizzes": [
+        {
+            "question": "Python의 창시자는?",
+            "choices": ["Guido van Rossum", "Linus Torvalds", "Bjarne Stroustrup", "James Gosling"],
+            "answer": 1
+        }
+    ],
+    "best_score": {"score": 80, "correct": 4, "total": 5}
+}
+```
+
+| 필드 | 설명 |
+|---|---|
+| `quizzes` | 퀴즈 목록 (리스트) |
+| `question` | 문제 글자 |
+| `choices` | 선택지 4개 (리스트) |
+| `answer` | 정답 번호 (1~4) |
+| `best_score` | 최고 점수. 아직 풀지 않았으면 `null` |
+| `score` / `correct` / `total` | 점수 / 맞힌 개수 / 전체 문제 수 |
+> clone 실습: 복제본에서 추가한 문장입니다.
+<img width="462" height="582" alt="699215767-c36330d9-46fd-4e02-bee7-c29f9fc0c688" src="https://github.com/user-attachments/assets/8f9900db-4b48-4409-971f-2c78d9db690f" />
+<img width="953" height="1010" alt="699215763-1fed3ea7-fb09-493b-aff1-4f2898c48919" src="https://github.com/user-attachments/assets/f65de10c-548e-4ab8-a1eb-65e133e7e653" />
+<img width="461" height="638" alt="699215758-1b8982c0-e65f-4bb8-b921-a588e913f6cb" src="https://github.com/user-attachments/assets/c4dc2710-485b-41c6-bc29-22221197b617" />
+<img width="968" height="1013" alt="699215744-23e13b6d-d8d9-489c-89ae-cdc8547ed0c0" src="https://github.com/user-attachments/assets/d63034e3-1069-40e0-a821-acbd00b248e4" />
+<img width="1917" height="1078" alt="699215771-dd9b597f-c092-4434-9c72-5a715788960b" src="https://github.com/user-attachments/assets/ca45d83e-37b3-469b-9737-a360728d2071" />
+
+
+
+
+>>>>>>> c95b8f257410c72fd47e86bc05ef9993d4f6e725
